@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      body {
+        z-index: 66000;
+      }
+
+      .modal-content {
+        font-family: Merriweather, arial, verdana;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 45rem;
+        border-radius: 0.5rem;
+        font-size: 14px;
+      }
+
+      .close-button {
+        font-weight: bold;
+        float: right;
+        width: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 1rem;
+      }
+
+      .close-button:hover {
+        background-color: darkgray;
+      }
+
+      .gist-modal {
+        width: 30%;
+      }
+
+      .gist-savebutton {
+        color: white;
+        border: 0 none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px 10px;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      .gist-savebutton {
+        width: 100%;
+        background: #27ae60;
+        color: white;
+        border: 0 none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px 10px;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      .click {
+        cursor: pointer;
+      }
+
+      #gist-code {
+        font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+          sans-serif !important;
+      }
+
+      input[type='text'],
+      textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 12px;
+        margin-top: 4px;
+        width: 100%;
+        box-sizing: border-box;
+        color: #2c3e50;
+        font-size: 13px;
+      }
+
+      label {
+        margin-bottom: 12px;
+      }
+
+      .radio {
+        margin-bottom: 12px;
+      }
+
+      #gist-filename,
+      #gist-description {
+        font-family: Merriweather, arial, verdana !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container"></div>
+    <script src="form.js"></script>
+  </body>
+</html>

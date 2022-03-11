@@ -1,0 +1,6 @@
+{
+  "extName": {
+    "message": "Easy Gist",
+    "description": "This tool allows you to save selected text on a Github Gist and append the gist url to your clipboard"
+  }
+}

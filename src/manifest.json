@@ -1,0 +1,52 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_extName__",
+  "homepage_url": "http://localhost:8080/",
+  "description": "This tool allows you to save selected text on a Github Gist and append the gist url to your clipboard",
+  "default_locale": "en",
+  "permissions": [
+    "identity",
+    "storage",
+    "contextMenus",
+    "clipboardWrite"
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ],
+    "persistent": false
+  },
+  "web_accessible_resources": [
+    "form.html"
+  ],
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "run_at": "document_end",
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "css/style.css"
+      ],
+      "js": [
+        "js/content-script.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "__MSG_extName__",
+    "default_icon": {
+      "19": "icons/19.png",
+      "38": "icons/38.png"
+    }
+  },
+  "version": "0.1.0",
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.gstatic.com/ https://www.googleapis.com; object-src "
+}
